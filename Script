@@ -1,0 +1,10 @@
+choice = prompt('Enter choice\n\n1. Strongly Disagree\n2. Disagree\n3. Slightly Disagree\n4. Neither Agree nor Disagree\n5. Slightly agree\n6. Agree\n7. Strongly Agree');
+document.getElementById('Q1_Option'+choice).checked = 'true';
+document.getElementById('Q2_Option'+choice).checked = 'true';
+document.getElementById('Q3_Option'+choice).checked = 'true';
+document.getElementById('Q4_Option'+choice).checked = 'true';
+document.getElementById('Q5_Option'+choice).checked = 'true';
+document.getElementById('txtcomments').value = prompt('Enter comment:\n');
+document.getElementsByClassName("manage_bttn manage_next1")[0].click();
+var delay = 3000; //1 second
+setTimeout(function() {document.getElementById("btnFeedbackOk").click();}, delay);
